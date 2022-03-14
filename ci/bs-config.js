@@ -13,9 +13,11 @@ const {docs} = require('./paths')
 const port = process.env.PORT||19527
 
 const { createProxyMiddleware } = require('http-proxy-middleware')
-
-const apiProxy = createProxyMiddleware('/api', {
-  target: 'xxx',
+const staticFilter = function (pathname,req){
+    return pathname.match('^/demo-ui') && req.method === 'GET'
+}
+const apiProxy = createProxyMiddleware(staticFilter, {
+  target: `http://localhost:${port}`,
   changeOrigin: true, // for vhosted sites
 })
 
@@ -25,9 +27,9 @@ module.exports = {
     files: ['./docs/**/*.{html,scss,js,jsx}'],
     server: {
         baseDir: docs,
-        // middleware: {
-        //   10: apiProxy,
-        // },
+        middleware: {
+          10: apiProxy,
+        },
     },
     open: true,
 }
