@@ -1,0 +1,24 @@
+{
+  "name": "nxdrop-ghpages",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "serve": "lite-server -c ci/bs-config.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@csdn:nxdrop/demo-ui.git"
+  },
+  "author": "nbsdev",
+  "license": "ISC",
+  "devDependencies": {
+    "http-proxy-middleware": "^2.0.4",
+    "lite-server": "^2.6.1"
+  }
+}
