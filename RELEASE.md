@@ -28,3 +28,9 @@
 > Release v0.2.4
  Publish At: 2022-3-19 By cmeta@tuta.io<lanbery@163.com>
 ---
+
+# Version 0.2.5-e04cddd
+    
+> Release v0.2.5
+ Publish At: 2022-3-19 By cmeta@tuta.io<lanbery@163.com>
+---
