@@ -22,3 +22,9 @@
 > Release v0.1.1
  Publish At: 2022-3-15 By victor<cmeta@tuta.io>
 ---
+
+# Version 0.2.4-3f8f72a
+    
+> Release v0.2.4
+ Publish At: 2022-3-19 By cmeta@tuta.io<lanbery@163.com>
+---
